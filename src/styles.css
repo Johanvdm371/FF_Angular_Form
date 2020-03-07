@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+form {
+  max-width: 550px;
+  display: block;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+label{
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.well{
+  min-height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button[disabled]{
+  background-color: grey;
+  color: white;
+}
+button[disabled]:hover, .btn-primary[disabled]:hover{
+  background-color: grey !important;
+  color: white;
+}

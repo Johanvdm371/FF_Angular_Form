@@ -1,0 +1,26 @@
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="form-signin container">
+
+  <h2 class="form-text">Please enter your details below:</h2>
+
+  <label>
+    First Name:
+    <input type="text" formControlName="firstName" class="form-row form-control" required>
+  </label>
+
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName" class="form-control" required>
+  </label>
+
+  <label>
+    Email:
+    <input type="text" formControlName="email" class="form-control" required>
+  </label>
+
+  <button type="submit" [disabled]="!signupForm.valid" class="btn btn-lg btn-primary btn-block">Save</button>
+
+  <div class="well">
+    <h2>{{outputString}}</h2>
+  </div>
+
+</form>
