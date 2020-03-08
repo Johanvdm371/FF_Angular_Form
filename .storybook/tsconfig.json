@@ -3,7 +3,37 @@
   "compilerOptions": {
     "types": [
       "node"
-    ]
+    ],
+    "outDir": "build/lib",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2017",
+      "dom"
+    ],
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDirs": [
+      "src",
+      "stories"
+    ],
+    "baseUrl": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "exclude": [
     "../src/test.ts",
@@ -11,10 +41,15 @@
     "../projects/**/*.spec.ts"
   ],
   "include": [
+    "../src/**/**/*",
     "../src/**/*",
+    "../projects/**/**/*",
     "../projects/**/*"
   ],
   "files": [
     "./typings.d.ts"
+  ],
+  "typings": [
+    "./shared/shared.module.d.ts"
   ]
 }
