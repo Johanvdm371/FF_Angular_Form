@@ -25,7 +25,7 @@ export class SignupFormComponent {
     this.signupForm.patchValue(this.signupForm.value);
 
     //Outputting the text to the panel:
-    this.outputString = `Hello ${this.signupForm.controls.firstName.value} ${this.signupForm.controls.lastName.value}. We have sent an email to  ${this.signupForm.controls.email.value}`;
+    this.outputString = `Hello ${this.signupForm.controls.firstName.value} ${this.signupForm.controls.lastName.value}. We have sent an email to ${this.signupForm.controls.email.value}`;
   }
 
 }
